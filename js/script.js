@@ -87,7 +87,7 @@ function addPokemonCard(order, name, hp, attack, defense, imageUrl) {
 
     card.innerHTML = `
         <div class="card">
-            <img src="${imageUrl}" class="card-img-top mx-auto" alt="${name}">
+            <img src="${imageUrl}" class="card-img-top w-75 mx-auto" alt="${name}">
             <div class="card-body">
                 <h5 class="m-0 mb-2 card-title text-center">#${order} ${name}</h5>
                 <p class="m-0 p-1 card-text"><i class="fa-solid fa-heart text-danger"></i> 
