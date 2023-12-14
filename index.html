@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loadingScreen" class="loading-screen">
+    <img src="img/pokebola.png" alt="">
+</div>
+
+<div class="container mt-5">
+    <div class="row align-items-center justify-content-center mb-4">
+        <img class="logo mr-3" src="img/pokebola.png" alt="">
+        <h1 class="text-center m-0">Pokedex</h1>
+    </div>
+
+    <div class="row mb-4 justify-content-center">
+        <div class="col-md-3">
+            <input type="text" id="search" class="form-control" placeholder="Buscar por nombre">
+        </div>
+        <div class="col-md-3">
+            <input type="number" min="1" max="151" id="pokemonNumber" class="form-control" placeholder="Número en la Pokedex">
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary" onclick="_applyFilters()">Aplicar filtros</button>
+        </div>
+    </div>
+    
+
+    <div class="row" id="pokemonList">
+        <!-- Aquí se mostrarán los pokemons -->
+    </div>
+</div>
+
+<script src="https://kit.fontawesome.com/55150138ae.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script> <!-- Puedes crear un archivo JS separado para la lógica del programa -->
+
+</body>
+</html>

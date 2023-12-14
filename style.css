@@ -1,0 +1,130 @@
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.4s ease; /* Agrega una transición de opacidad para un efecto suave */
+    opacity: 1; /* Inicialmente visible */
+    z-index: 1000; /* Asegúrate de que esté encima de otros elementos */
+}
+
+.loaded {
+    opacity: 0; /* Oculta la pantalla de carga cuando los datos están cargados */
+    z-index: -1000;
+}
+/* Estilo general para el cuerpo de la página */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.logo{
+    width: 45px;
+}
+/* Estilo para la fila de filtros */
+.row.mb-4 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para las tarjetas de Pokémon */
+.card {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de sombra al pasar el ratón sobre la tarjeta */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Añade este estilo para destacar el título en la tarjeta de Pokémon */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #3498db; /* Color de fondo destacado */
+    color: #fff; /* Color de texto en el título destacado */
+    padding: 8px; /* Añade espacio alrededor del título */
+    border-top-left-radius: 10px; /* Añade bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Añade bordes redondeados en la esquina superior derecha */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutíl */
+}
+
+/* Añade un margen al título para evitar el solapamiento con la imagen */
+.card-title {
+    margin-bottom: 10px;
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Estilo para el texto de la tarjeta */
+.icono-stats{
+    width: 15px;
+    margin-bottom: 4px !important;
+}
+.card-text {
+    font-size: 1rem;
+}
+
+/* Estilo para el número de Pokedex */
+.card-title small {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Estilo para la fila de tarjetas */
+#pokemonList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card p:nth-child(6){
+    border-radius: 0 0 10px 10px;
+}
+/* Estilo para los márgenes de las tarjetas */
+.col-md-3 {
+    margin-bottom: 20px;
+}
+
+/* Estilo para la barra de desplazamiento */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Estilo para el riel de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Estilo para el mango de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Estilo para el borde al pasar el ratón sobre la barra de desplazamiento */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
