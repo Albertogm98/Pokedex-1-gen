@@ -17,6 +17,23 @@
     opacity: 0; /* Oculta la pantalla de carga cuando los datos están cargados */
     z-index: -1000;
 }
+
+/* BOTON DE SUBIR */
+
+.subir{
+    border-radius: 7px;
+    color: white;
+    background: #3498db;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    padding: 0.2rem 0.4rem;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+
 /* Estilo general para el cuerpo de la página */
 body {
     background-color: #f0f0f0;

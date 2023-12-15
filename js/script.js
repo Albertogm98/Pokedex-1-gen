@@ -1,6 +1,28 @@
+if (window.scrollY > 1) {
+    btnSubir.style.display = 'block';
+} else {
+    btnSubir.style.display = 'none';
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     // Lógica para cargar todos los Pokémon y mostrarlos en tarjetas
     loadAllPokemon();
+
+    // Obtener el botón y agregar un evento de clic
+    var btnSubir = document.getElementById('btnSubir');
+    btnSubir.addEventListener('click', function () {
+        // Hacer que la página se desplace suavemente hacia arriba
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Mostrar u ocultar el botón en función de la posición de desplazamiento
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 200) {
+            btnSubir.style.display = 'block';
+        } else {
+            btnSubir.style.display = 'none';
+        }
+    });
 });
 
 function _applyFilters() {
